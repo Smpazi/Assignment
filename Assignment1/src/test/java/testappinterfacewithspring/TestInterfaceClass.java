@@ -38,6 +38,13 @@ public class TestInterfaceClass {
         assertEquals("The business will be charged interest of 120.0", 120.0,result);
 
     }
+     @Test
+    public void getTotalAmountDueTest() throws Exception{
+        double outPut = busineses.getTotalAmountDue();
+
+        assertEquals("The total amount to be returned is 920.0",920.0,outPut);
+    }
+
 
 
 }
