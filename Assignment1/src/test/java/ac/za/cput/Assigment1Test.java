@@ -26,7 +26,7 @@ public class Assigment1Test {
 
     List animal = assignlist.animalList();
 
-    assertEquals("Number of elements in the array are 5",4,animal.size());
+    assertEquals("Number of elements in the array are 4",4,animal.size());
 
 }
 @Test
