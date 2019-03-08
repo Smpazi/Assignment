@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Assignment1App {
 
-    public void animalList(){
+    public List animalList(){
 
         List animal = new ArrayList();
 
@@ -14,24 +14,15 @@ public class Assignment1App {
         animal.add("Dog");
         animal.add("Mouse");
 
-        System.out.println("Number of elements in the array are 5: "+ animal.size());
+      //  System.out.println("Number of elements in the array are 5: "+ animal.size());
 
         animal.remove(3);
 
-        System.out.println("Number of elements in the array are 4 now : "+animal.size());
+      //  System.out.println("Number of elements in the array are 4 now : "+animal.size());
 
-
+        return animal;
     }
-    public void colourSets(){
-
-        Set colour = new HashSet();
-        colour.add("Navy");
-        colour.add("Black");
-        colour.add("Yellow");
-        colour.add("Orange");
-
-        // Print the elements of the Set
-        System.out.println("myColours: " + colour);
+    public Set colourSets(){
 
         List secondaryColour = new ArrayList();
         secondaryColour.add("Maroon");
@@ -43,14 +34,12 @@ public class Assignment1App {
         //the set using the appropriate constructor
         Set mySet2 = new HashSet(secondaryColour);
 
-        // Print the elements of the list an the the set
-         System.out.println("mySecondaryColours: " + mySet2);
-
         // Compare the two sets
-        System.out.println("colour matches secondColour: " + colour.equals(mySet2));
+      // System.out.println("I have blue in my set: " + mySet2.contains("Blue"));
 
+        return mySet2;
     }
-    public void mapEmpNameWithEmpCity(){
+    public Map mapEmpNameWithEmpCity(){
 
         Map mapNamewithCity = new HashMap();
         mapNamewithCity.put("Salomi", "Stellenbosch");
@@ -58,20 +47,21 @@ public class Assignment1App {
         mapNamewithCity.put("Ziyanda", "Gugulethu");
         mapNamewithCity.put("Masivuye", "Cape Town");
 
-        //String element = (String) mapNamewithCity.get("Salomi");
 
         System.out.println("Salomi stays in: "+ mapNamewithCity.get("Salomi"));
+
+        return mapNamewithCity;
     }
 
-    public void checkCollection(){
+    public Collection<Integer> checkCollection(){
 
         Integer[] numbers = new Integer[]{1,2,3,4,5,6};
         Collection<Integer> myNumCollection = new LinkedHashSet<>();
         Collections.addAll(myNumCollection,numbers);
-        System.out.println(myNumCollection);
-        System.out.println("The collection contains: "+numbers.length+" values");
+        //System.out.println(myNumCollection);
+       // System.out.println("The collection contains: "+numbers.length+" values");
 
-
+        return myNumCollection;
     }
     public static void main (String []args){
         Assignment1App app = new Assignment1App();
